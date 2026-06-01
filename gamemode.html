@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Queens Rush - Mode Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"surface-container-low": "#f3f4f5", "outline-variant": "#c5c6cd", "on-error-container": "#93000a", "on-background": "#191c1d", "secondary-container": "#90c9ff", "on-primary": "#ffffff", "inverse-surface": "#2e3132", "on-error": "#ffffff", "surface-tint": "#515f78", "surface-container-high": "#e7e8e9", error: "#ba1a1a", "on-primary-fixed-variant": "#39475f", "inverse-primary": "#b9c7e4", "on-tertiary-fixed": "#091c33", "surface-bright": "#f8f9fa", "on-tertiary-fixed-variant": "#374761", "on-tertiary-container": "#7485a1", "inverse-on-surface": "#f0f1f2", "tertiary-container": "#091c33", primary: "#000000", secondary: "#206393", "on-secondary": "#ffffff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "tertiary-fixed": "#d5e3ff", tertiary: "#000000", "tertiary-fixed-dim": "#b6c7e6", "on-primary-container": "#76849f", "primary-fixed": "#d6e3ff", "on-secondary-fixed-variant": "#004a75", "primary-fixed-dim": "#b9c7e4", "on-surface-variant": "#44474d", "surface-variant": "#e1e3e4", "on-surface": "#191c1d", "surface-container-highest": "#e1e3e4", "surface-dim": "#d9dadb", "on-primary-fixed": "#0d1c32", "on-secondary-container": "#035584", "surface-container": "#edeeef", "secondary-fixed": "#cee5ff", background: "#f8f9fa", surface: "#f8f9fa", "primary-container": "#0d1c32", "surface-container-lowest": "#ffffff", outline: "#75777e", "secondary-fixed-dim": "#96ccff", "on-secondary-fixed": "#001d32"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {base: "8px", "stack-md": "16px", gutter: "16px", "margin-mobile": "24px", "stack-sm": "8px", "stack-lg": "32px", "card-padding": "20px"}, fontFamily: {"headline-sm": ["Montserrat"], "headline-md": ["Montserrat"], "label-lg": ["Inter"], "display-lg": ["Montserrat"], "label-sm": ["Inter"], "body-md": ["Inter"], "body-lg": ["Inter"], headline: ["Montserrat"], display: ["Montserrat"], body: ["Inter"], label: ["Inter"]}, fontSize: {"headline-sm": ["20px", {lineHeight: "28px", letterSpacing: "0.01em", fontWeight: "600"}], "headline-md": ["24px", {lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "600"}], "label-lg": ["14px", {lineHeight: "20px", letterSpacing: "0.08em", fontWeight: "600"}], "display-lg": ["32px", {lineHeight: "40px", letterSpacing: "0.05em", fontWeight: "700"}], "label-sm": ["12px", {lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "500"}], "body-md": ["16px", {lineHeight: "24px", letterSpacing: "0", fontWeight: "400"}], "body-lg": ["18px", {lineHeight: "28px", letterSpacing: "0", fontWeight: "400"}]}}}};</script>
+<style>
+    body {
+      background-color: #f8f9fa;
+      background-image: 
+        radial-gradient(circle at 2px 2px, #e9ecef 1px, transparent 0);
+      background-size: 40px 40px;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen text-on-surface font-body-md flex flex-col">
+<!-- TopAppBar Component -->
+<main class="flex-1 px-margin-mobile max-w-4xl mx-auto w-full py-stack-lg space-y-stack-lg justify-center">
+<section>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-stack-md">Select Game Mode</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- PLAYER VS PLAYER CARD -->
+<button class="glass-card group relative overflow-hidden rounded-[32px] p-card-padding flex flex-col items-center text-center transition-all duration-300 hover:shadow-[0_10px_30px_rgba(10,25,47,0.08)] hover:-translate-y-1 active:scale-95 border-2 border-primary/5 hover:border-primary/20">
+<div class="mb-4 p-4 rounded-full bg-secondary-container/30 text-secondary transition-colors group-hover:bg-secondary-container/50">
+<span class="material-symbols-outlined text-[48px]" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">PLAYER VS PLAYER</h3>
+<p class="font-body-md text-label-sm text-outline mt-2">Challenge a friend locally or online.</p>
+<div class="absolute bottom-0 left-0 h-1 w-0 bg-primary transition-all duration-500 group-hover:w-full"></div>
+</button>
+<!-- PLAYER VS BOT CARD -->
+<button class="glass-card group relative overflow-hidden rounded-[32px] p-card-padding flex flex-col items-center text-center transition-all duration-300 shadow-[0_10px_30px_rgba(10,25,47,0.05)] border-2 border-primary active:scale-95">
+<div class="mb-4 p-4 rounded-full bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[48px]" data-icon="smart_toy">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">PLAYER VS BOT</h3>
+<p class="font-body-md text-label-sm text-outline mt-2">Practice against our advanced AI.</p>
+<div class="absolute top-4 right-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+</div>
+</section>
+<!-- Board Size Section -->
+<section class="space-y-stack-md">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary">Board Size</h2>
+<span class="px-3 py-1 bg-secondary-container/20 rounded-full font-label-sm text-label-sm text-secondary font-bold">Standard</span>
+</div>
+<div class="glass-card rounded-full p-1.5 flex gap-1 bg-surface-container-low">
+<button class="flex-1 py-3 px-6 rounded-full font-label-lg text-label-lg transition-all duration-300 text-outline hover:text-primary">
+          6 x 6
+        </button>
+<button class="flex-1 py-3 px-6 rounded-full font-label-lg text-label-lg transition-all duration-300 bg-white text-primary shadow-[0_4px_12px_rgba(0,0,0,0.1)] font-bold">
+          8 x 8
+        </button>
+</div>
+</section>
+<!-- Bot Difficulty Section -->
+<section class="space-y-stack-md">
+<h2 class="font-headline-sm text-headline-sm text-primary">Bot Difficulty</h2>
+<div class="glass-card rounded-[24px] p-2 flex bg-surface-container-low overflow-hidden">
+<button class="flex-1 py-4 font-label-lg text-label-lg text-outline hover:bg-white/40 rounded-[18px] transition-all">
+          Easy
+        </button>
+<button class="flex-1 py-4 font-label-lg text-label-lg text-primary bg-white shadow-[0_4px_12px_rgba(0,0,0,0.08)] rounded-[18px] font-bold">
+          Medium
+        </button>
+<button class="flex-1 py-4 font-label-lg text-label-lg text-outline hover:bg-white/40 rounded-[18px] transition-all">
+          Hard
+        </button>
+</div>
+</section>
+<!-- Start Action -->
+<div class="pt-stack-lg">
+<button class="w-full bg-primary text-on-primary py-5 rounded-[24px] font-headline-sm text-headline-sm shadow-[0_10px_30px_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-95 transition-all border-t border-white/20">
+        START MATCH
+      </button>
+</div>
+</main>
+</body></html>

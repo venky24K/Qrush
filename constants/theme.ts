@@ -1,53 +1,38 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
 import { Platform } from 'react-native';
-
-const tintColorLight = '#0a7ea4';
-const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#11181C',
-    background: '#fff',
-    tint: '#0a7ea4',
-    icon: '#687076',
-    tabIconDefault: '#687076',
-    tabIconSelected: '#0a7ea4',
+    text: '#191c1d',
+    background: '#FFFFFF',
+    surface: '#FFFFFF',
+    surfaceDim: '#f0f1f2',
+    onSurface: '#191c1d',
+    primary: '#000000',
+    secondary: '#206393',
+    tint: '#000000',
+    icon: '#191c1d',
+    tabIconDefault: '#191c1d',
+    tabIconSelected: '#000000',
   },
   dark: {
-    text: '#FFF',
-    background: '#000',
-    tint: '#3B82F6',
-    icon: '#475569',
-    tabIconDefault: '#475569',
-    tabIconSelected: '#3B82F6',
+    text: '#f8f9fa',
+    background: '#191c1d',
+    surface: '#191c1d',
+    surfaceDim: '#000000',
+    onSurface: '#f8f9fa',
+    primary: '#f8f9fa',
+    secondary: '#206393',
+    tint: '#f8f9fa',
+    icon: '#f8f9fa',
+    tabIconDefault: '#f8f9fa',
+    tabIconSelected: '#f8f9fa',
   },
 };
 
-export const Fonts = Platform.select({
-  ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
-    serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
-    rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
-    mono: 'ui-monospace',
-  },
-  default: {
-    sans: 'normal',
-    serif: 'serif',
-    rounded: 'normal',
-    mono: 'monospace',
-  },
-  web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-    serif: "Georgia, 'Times New Roman', serif",
-    rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
-    mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
-  },
-});
+export const Fonts = {
+  sans: 'Inter_400Regular',
+  sansMedium: 'Inter_500Medium',
+  sansSemiBold: 'Inter_600SemiBold',
+  display: 'Montserrat_600SemiBold',
+  displayBold: 'Montserrat_700Bold',
+};
